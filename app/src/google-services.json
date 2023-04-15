@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494604973161",
+    "project_id": "qrcs-f01fb",
+    "storage_bucket": "qrcs-f01fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494604973161:android:8ae6f8464569e453a99ef8",
+        "android_client_info": {
+          "package_name": "com.nonnorbi.qrcs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494604973161-iog9vcrkeduonso2l4dchqd8h89jh77f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0rcP05ZKkIiN1x_cVabb3FJ-p-q4Fyi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494604973161-iog9vcrkeduonso2l4dchqd8h89jh77f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

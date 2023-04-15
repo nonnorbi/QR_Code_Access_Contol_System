@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#2D3C41">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/iceland"
+            android:gravity="center_horizontal"
+            android:shadowColor="#000000"
+            android:text="QR Code\n Access Control System"
+            android:textAlignment="center"
+            android:textColor="#C1EDFD"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/scannQRcode"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="430dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/iceland"
+            android:shadowColor="#000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Scann QR Code"
+            android:textColor="#C1EDFD"
+            android:textSize="20dp"
+            app:backgroundTint="#5E7780" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scannQRcode"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:fontFamily="@font/jost_light"
+                android:linksClickable="false"
+                android:shadowColor="#000000"
+                android:shadowDx="6"
+                android:shadowRadius="7"
+                android:text="Do not have an account?               "
+                android:textAlignment="center"
+                android:textColor="#B3FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/signup"
+                android:shadowRadius="7"
+                android:shadowDx="6"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:autoLink="phone"
+                android:fontFamily="@font/jost_bold"
+                android:linksClickable="true"
+                android:shadowColor="#000000"
+                android:text="                                    Sign Up"
+                android:textAlignment="center"
+                android:textColor="#5E7780"
+                android:textColorLink="#5E7780"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+            android:alpha=".20"
+            android:rotationY="10"
+            android:src="@drawable/testtt"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+
+</ScrollView>

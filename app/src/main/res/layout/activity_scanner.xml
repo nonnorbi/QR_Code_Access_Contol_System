@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scanner">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maskColor="#77000000" />
+
+    <TextView
+        android:id="@+id/resultOfQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all|web|email"
+        android:linksClickable="true"
+        android:text="RESULT"
+        android:textAlignment="center"
+        android:textColor="#B1C115"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scannerView"
+        app:layout_constraintStart_toStartOf="@+id/scannerView"
+        app:layout_constraintTop_toTopOf="@+id/scannerView"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <ImageView
+        android:id="@+id/allow"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scannerView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/scannerView"
+        app:layout_constraintTop_toTopOf="@+id/scannerView"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/seekpng_com_neon_arrow_png_1087205"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/denied"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scannerView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/scannerView"
+        app:layout_constraintTop_toTopOf="@+id/scannerView"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/notallow"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
